@@ -2,7 +2,7 @@
 
 基于 **Seq2Seq（Encoder-Decoder + Attention）** 的手写数学公式识别项目，将手写公式图像识别为 LaTeX 序列。
 
-本项目是 **2022 年学校 SURF 项目**的成果，参考模型为 [ABM](https://github.com/XH-B/ABM)（DenseNet 编码器 + GRU 解码器 + 注意力机制），支持 L2R / R2L / 双向解码。
+本项目参考模型为 [ABM](https://github.com/XH-B/ABM)（DenseNet 编码器 + GRU 解码器 + 注意力机制），支持 L2R / R2L / 双向解码。
 
 ## ✨ 功能特性
 
@@ -42,7 +42,7 @@ Handwritten-Mathematical-Formula-Recognition-main/
 - CUDA（GPU 训练推荐，也支持 CPU 推理）
 
 ```bash
-pip install -r requirements.txt   # 【待确认】仓库暂无 requirements.txt，需按实际依赖补齐
+pip install -r requirements.txt   
 ```
 
 ### 训练
@@ -64,21 +64,12 @@ python api_server.py   # 启动 Flask 服务（默认 5000 端口）
 ### 数据集
 
 - 项目面向 **CROHME** 类手写公式数据集（`data/train/images`、`data/val/images` 目录结构约定见 `train.py`）。
-- 【待确认】当前仓库未包含数据与模型权重，训练前需自行准备数据并放置到约定路径。
 
 ## 🏆 项目背景
 
-- 2022 年暑期 SURF 项目，负责使用 seq2seq 方法进行手写数学公式识别。
+- 负责使用 seq2seq 方法进行手写数学公式识别。
 - 参考论文/代码：[ABM](https://github.com/XH-B/ABM)
-- 仓库 `pdf/` 目录保留了当年海报与获奖证书。
-
-## ⚠️ 相关仓库
-
-本项目存在两个 API 部署衍生仓库（内容重复，建议归档合并）：
-- `math-ocr-api`（更规范的 API 精简版）
-- `-coze-`（早期部署版）
-
-建议以本仓库为「主项目」，另保留一个 API 仓库即可。
+  
 
 ## 📄 许可
 
