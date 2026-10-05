@@ -1,0 +1,8 @@
+# 手写公式识别（SURF 2022）训练与推理依赖
+# 训练建议在 GPU 上运行；CPU 可跑推理（较慢）
+torch>=1.13.0
+torchvision>=0.14.0
+numpy>=1.21.0
+tqdm>=4.60.0
+Pillow>=9.0.0
+flask>=2.2.0   # 供 api_server.py 推理服务使用
