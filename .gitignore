@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 模型权重（体积大，不入库）
+*.pkl
+*.pth
+models/
+-result_path/
+
+# 数据集
+datasets/
+data/
+
+# 系统文件
+.DS_Store
